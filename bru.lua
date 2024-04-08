@@ -169,11 +169,11 @@ local Hidden = false
 local Debounce = false
 local Notifications = Rayfield.Notifications
 
-if Rayfield.Minimised == true then
-    window.Name = "Elevated Cheats | FPS 240 | South Bronx - Full Edition | 21 Minutes"
+if Minimised == true then
+    Main.Topbar.Title = "Elevated Cheats | FPS 240 | South Bronx - Full Edition | 21 Minutes"
 end
 
-if Rayfield.Minimised == false then
+if Minimised == false then
     window.Name = "Elevated - South Bronx"
 end
 
