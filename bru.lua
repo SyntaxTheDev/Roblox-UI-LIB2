@@ -169,6 +169,14 @@ local Hidden = false
 local Debounce = false
 local Notifications = Rayfield.Notifications
 
+if Rayfield.Minimised == true then
+    window.Name = "Elevated Cheats | FPS 240 | South Bronx - Full Edition | 21 Minutes"
+end
+
+if Rayfield.Minimised == false then
+    window.Name = "Elevated - South Bronx"
+end
+
 local SelectedTheme = RayfieldLibrary.Theme.Default
 
 function ChangeTheme(ThemeName)
