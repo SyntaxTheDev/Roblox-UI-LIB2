@@ -1,20 +1,10 @@
---[[
-
-Rayfield Interface Suite
-by Sirius
-
-shlex | Designing + Programming
-iRay  | Programming
-
-]]
-
-
-
 local Release = "Beta 8"
 local NotificationDuration = 6.5
 local RayfieldFolder = "Elevated"
 local ConfigurationFolder = RayfieldFolder.."/Configurations"
 local ConfigurationExtension = ".key"
+
+
 
 local RayfieldLibrary = {
 	Flags = {},
@@ -819,7 +809,6 @@ end
 
 function Minimise()
 	Debounce = true
-	Topbar.Title = "Test"
 	Topbar.ChangeSize.Image = "rbxassetid://"..11036884234
 
 	for _, tabbtn in ipairs(TabList:GetChildren()) do
@@ -2482,11 +2471,5 @@ function RayfieldLibrary:LoadConfiguration()
 end
 
 task.delay(3.5, RayfieldLibrary.LoadConfiguration, RayfieldLibrary)
-if Rayfield:FindFirstChild("Notice") then
-	Rayfield.Notice.Visible = true
-	Rayfield.Notice.Interact.MouseButton1Click:Connect(function()
-		Rayfield.Notice.Visible = false
-	end)
-end
 
-	return RayfieldLibrary
+return RayfieldLibrary
